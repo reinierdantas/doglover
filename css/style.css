@@ -363,6 +363,12 @@ header{
     .doginfo{
         margin-top: -5px;
     }
+    .call h2{
+        width: 80% !important;
+    }
+    .volunteer h2{
+        width: 80% !important;
+    }
 }
 @media(max-width:400px){
     .dog-txt{
