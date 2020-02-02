@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Be Vietnam', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
 }
 html,body{
     height: 100%;
@@ -16,6 +16,12 @@ ul,li{
 a{
     text-decoration: none;
     color: #fff;
+}
+img{
+    max-width: 100%;
+}
+h2{
+    font-weight: 300;
 }
 .noSelect { 
     -webkit-touch-callout: none; 
@@ -39,21 +45,24 @@ header{
     float: left;
 }
 .paw-header{
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     cursor: pointer;
 }
 .menu-nav{
     float: right;
-    padding: 30px 0px 0px 0px;  
+    padding: 25px 0px 0px 0px;  
 }
+
 .menu-nav ul li{
-    padding: 0px 10px;
     display: inline-block;    
+}
+.menu-nav ul li + li{
+    padding-right: 10px;
 }
 
 .menu-nav a{
-    font-size: 20px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -61,7 +70,7 @@ header{
     font-weight: 700;
 }
 .fa-bone{
-    font-size: 18px;
+    font-size: 15px;
     opacity: 0;
     visibility: hidden;
 }
@@ -71,7 +80,7 @@ header{
 }
 
 /*menu mobile and media query*/
-@media(max-width:910px){    
+@media(max-width:800px){    
 .mobile-btn{
     display: block;
     color: #fff;
@@ -80,10 +89,15 @@ header{
     border-top: 4px solid;
     float: right;
     position: relative;
-    top: 30px;
+    top: 25px;
     right: 30px;
     cursor: pointer;
-    -webkit-backface-visibility:hidden;
+}
+.paw-header{
+    font-size: 36px;
+}
+.menu-nav ul li + li{
+    padding-right: 0px;
 }
 .mobile-btn::after, .mobile-btn::before{
     content: '';
@@ -105,12 +119,15 @@ header{
     margin-top: 0px;
     top: 6px;
     transform: rotate(135deg);
+    transition: ease .5s;
 }
+
 .menu-nav.mobile-menu{
     position: absolute;
     background: #b8b7b6;
     padding: 10px 10px 10px 20px;
-    top: 80px;
+    width: 100%;
+    top: 70px;
     right: 0px;
     opacity: 0;
     visibility: hidden;
@@ -139,23 +156,6 @@ header{
     height: 500px;
 }
 }
-@media(max-width:530px){
-    header{
-        height: 80px;
-    }
-    .paw-header{
-        font-size: 25px;
-        margin-left: -20px;
-        margin-top: 10px;
-    }
-    .mobile-btn{
-        position: relative;
-        top: 30px;
-    }
-}
-
-
-
 /*Section Gallery*/
 .gallery{
     background: #000;
@@ -224,11 +224,10 @@ header{
 }
 .call{
     width: 100%;
-    padding: 30px 0px;
-    
+    padding: 30px 0px;  
 }
 .adoption> .call h2{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     text-align: center;
     margin-top: 50px;
@@ -244,9 +243,9 @@ header{
     justify-content: center;
 }
 .cards img{
-    width: 180px;
-    height: 180px;
-    margin: 50px 5px 30px 5px;
+    width: 80px;
+    height: 80px;
+    margin: 50px 10px 30px 10px;
     opacity: 0.5;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -261,10 +260,10 @@ header{
     text-transform: uppercase;
     border: none;
     display: block;
-    background: #824a4a;
+    background: #420808;
     color: #fff;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 20px;
     padding: 10px 30px;
     border: 2px solid #fff;
     border-radius: 20px;
@@ -273,7 +272,7 @@ header{
     margin-top: 20px;
 }
 .doginfo button:hover{
-    background: #420808;
+    background: #824a4a;
     text-decoration: underline;
 }
 .doggo{
@@ -285,6 +284,7 @@ header{
     visibility: hidden;
     transform: translate3d(-50px, 0px, 0);
     height: 0;
+    
 }
 .doggo.boom{
     opacity: 1;
@@ -293,30 +293,40 @@ header{
     transform: translate3d(0px, 0px, 0);
     height: auto;
 }
-.dog-img img{
-    flex: 1 1 150;
-    width: 500px;
-    height: 700px;
-}
-.dog-img h2{
+.dog-img{
     position: relative;
-    top: -15%;
+}
+.dog-txt{
+    position: absolute;
+    display: inline-block;
+    top: 90%;
+    left: 30%;
     width: 200px;
+}
+.dog-txt h2{
+    color: #fff;
     margin: 0 auto;
     text-align: center;
     background: #420808;
-    font-size: 30px;
-    padding: 2% 2%;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+}
+.dog-img img{
+    flex: 1 1 50px;
+    width: 500px;
+    height: 100%;
+    
 }
 .doginfo{
     background: #e8e8e8;
     width: 100%;
-    flex: 1 1 400px;
+    flex: 1 1 40px;
     color: #420808;
     padding: 2% 2%;
     text-align: justify;
     flex-wrap: wrap;
-    height: 700px;    
+    height: auto;    
 }
 .doginfo h3{
     padding-bottom: 5px;
@@ -335,163 +345,40 @@ header{
     font-size: 20px;
     padding-bottom: 5px;
 }
-/*Adopt section media queryes*/
-@media(max-width:1100px){
-    .doginfo ul li{
-        line-height: 12px;
-    }
-    .doginfo p{
-        font-size: 14px;
-    }
-    .doginfo h3{
-        font-size: 25px;
-    }
-}
-@media(max-width:970px){
-    .dog-img{
-        margin: 0 auto;
-    }
+@media(max-width:860px){
+    .doggo{
+        flex-direction: column;
+    } 
     .dog-img img{
-        width: 350px;
-        height: 650px;
+        width: 100%;
+        height: 600px;
+    }
+    .dog-txt{
+        position: absolute;
+        display: inline-block;
+        top: 90%;
+        left: 28%;
+        width: 200px;
     }
     .doginfo{
-        height: 650px;
-    }
-    .doginfo ul li{
-        line-height: 8px;
-        font-size: 12px;
-    }
-    .doginfo p{
-        font-size: 13px;
-    }
-    .doginfo h3{
-        font-size: 25px;
-    }
-    .doginfo button{
-        margin-top: 20px;
+        margin-top: -5px;
     }
 }
-@media(max-width:900px){
-    .cards img{
-        width: 150px;
-        margin: 10px 20px 30px 10px;
+@media(max-width:400px){
+    .dog-txt{
+        top: 85%;
+        left: 20%;
     }
-}
-@media(max-width:800px){
     .cards img{
-        width: 130px;
-        height: 180px;
-        margin: 10px 20px 30px 10px;
-    }
-    .dog-img{
-        margin: 0 auto;
+        width: 70px;
+        height: 70px;
+        margin: 0px 40px 30px 40px;
     }
     .dog-img img{
-        width: 350px;
-        height: 350px;
-    }
-    .doginfo{
-        height: 500px;
-        padding-bottom: 20px;
-        margin-bottom:70px;
-    }
-    .doginfo ul li{
-        line-height: 8px;
-        font-size: 12px;
-    }
-    .doginfo p{
-        font-size: 13px;
-    }
-    .doginfo h3{
-        font-size: 25px;
-    }
-    .doginfo button{
-        margin-top: 20px;
-        font-size: 18px;
-        padding: 10px 20px;  
-    }
-    .dog-img h2{
-    position: relative;
-    top: -20%;
-}
-}
-@media(max-width:680px){
-    .cards img{
-        width: 150px;
-        height: 150px;
-        margin: 10px 37px 30px 37px;    
-}
-    .russel p{
-        font-size: 12px;
+        width: 100%;
+        height: 400px;
     }
 }
-@media(max-width:550px){
-    .cards img{
-        width: 100px;
-        height: 100px;
-        margin: 5px 37px 30px 37px;    
-}
-       .doginfo button{
-        margin-top: 10px;
-        font-size: 14px;
-        padding: 10px 20px;  
-    }
-      .doginfo ul li{
-        line-height: 5px;
-        font-size: 12px;
-    }
-}
-@media(max-width:430px){
-    .cards img{
-        width: 100px;
-        height: 100px;
-        margin: 5px 37px 30px 37px;    
-}
-
-    .doginfo button{
-        margin-top: 10px;
-        font-size: 12px;
-        padding: 10px 20px;  
-    }
-    .doginfo ul li{
-        line-height: 5px;
-        font-size: 12px;
-    }
-    .doginfo h3{
-        font-size: 20px;
-    }
-     .doginfo h4{
-        font-size: 18px;
-    }
-}
-@media(max-width:375px){
-
-    .doginfo h3{
-        font-size: 18px;
-    }
-     .doginfo h4{
-        font-size: 16px;
-    }
-    .doginfo p{
-        font-size: 11px
-    }
-    .dog-img h2{
-    position: relative;
-    top: -20%;
-    right: 20px;        
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    background: #420808;
-    font-size: 30px;
-    padding: 2% 2%;
-}
-    .russel p{
-        font-size: 10px;
-    }
-}
-
 
 /*Section videos*/
 .videos{
@@ -500,8 +387,9 @@ header{
     color: #fff;
 }
 .videos > .call h2{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
+    margin-top: 50px;
     text-align: center;
     padding: 10px 0px;
     border-top: 2px solid;
@@ -583,9 +471,14 @@ header{
     margin-top: 100px;
 }
 .volunteer h2{
-    width: 100%;
-    font-size: 20px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
+    padding: 10px 0px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
 }
 form{
     padding-bottom: 170px;
@@ -615,13 +508,13 @@ form button:hover{
 }
 @media(max-width:510px){
     input{
-        max-width: 60%;
-        width: 100%;
+        max-width: 100%;
+        width: 80%;
         border-radius: 5px;
     }
     form button{
-        width: 60%;
-        max-width: 60%;
+        width: 80%;
+        max-width: 100%;
         margin-left: 0;
         margin-top: 15px;
         border-radius: 5px;
@@ -704,3 +597,29 @@ small a:hover{
 .backtop i:hover{
     color: #e8e8e8;
 }
+
+/* Br colors */
+.headerbr, .adoptionbr, .doginfobr button, .dog-txtbr, .dog-txtbr h2, .videosbr, .charitybr{
+    background:#1e761e;
+}
+.doginfobr, .socialbr, .socialbr i, .backtopbr i, .charity-cardsbr h3{
+    color: #1e761e;
+}
+.backtopbr:hover{
+    background: #7add7a;
+}
+.formbr button[type="submit"]{
+    background: #7add7a;
+}
+.doginfobr button:hover{
+    background: #7add7a;
+}
+
+@media(max-width:800px){    
+    .menu-nav.mobile-menubr li:hover{
+            background-color: #7add7a;
+    }
+    .menu-nav.mobile-menubr li{
+        border-bottom: 2px solid #1e761e ;
+    }
+    }
