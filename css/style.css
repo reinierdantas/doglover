@@ -35,7 +35,7 @@ h2{
 
 /*Header*/
 header{
-    background: #420808;
+    background: #0074e1;
     width: 100%;
     position: fixed;
     z-index: 100;
@@ -46,7 +46,7 @@ header{
 }
 .paw-header{
     font-size: 30px;
-    color: #fff;
+    color: #f79e02;
     cursor: pointer;
 }
 .menu-nav{
@@ -73,6 +73,7 @@ header{
     font-size: 15px;
     opacity: 0;
     visibility: hidden;
+    color: #f79e02;
 }
 .fa-bone.show{
     opacity: 1;
@@ -83,7 +84,7 @@ header{
 @media(max-width:800px){    
 .mobile-btn{
     display: block;
-    color: #fff;
+    color: #f79e02;
     width: 36px;
     height: 36px;
     border-top: 4px solid;
@@ -136,7 +137,7 @@ header{
     text-align: center;
 }
 .menu-nav.mobile-menu li:hover{
-        background-color: #824a4a;
+        background-color: #1b9ce5;
 }
 .menu-nav.mobile-menu.active{
     opacity: 1;
@@ -145,7 +146,7 @@ header{
 }
 .menu-nav.mobile-menu li{
 	display: block;
-    border-bottom: 2px solid #420808 ;
+    border-bottom: 2px solid #6cdaee ;
     padding-bottom: 10px;
     padding-top: 5px;
 }
@@ -174,7 +175,7 @@ header{
     width: 100%;
     top: 40%;
     text-align: center;
-    color: #fff;
+    color: #f79e02;
     font-size: 40px;
     font-weight: 700;
     
@@ -211,7 +212,7 @@ header{
 
 /*Adoption section*/
 .adoption{
-    background: #420808;
+    background: #1b9ce5;
     color: #fff;
     max-height: auto;
     display: flex;
@@ -247,7 +248,7 @@ header{
     height: 80px;
     margin: 50px 10px 30px 10px;
     opacity: 0.5;
-    border: 2px solid #fff;
+    border: 5px solid #f79e02;
     border-radius: 50%;
 }
 .cards img:hover{
@@ -260,7 +261,7 @@ header{
     text-transform: uppercase;
     border: none;
     display: block;
-    background: #420808;
+    background: #f79e02;
     color: #fff;
     font-weight: 700;
     font-size: 20px;
@@ -272,7 +273,6 @@ header{
     margin-top: 20px;
 }
 .doginfo button:hover{
-    background: #824a4a;
     text-decoration: underline;
 }
 .doggo{
@@ -304,10 +304,10 @@ header{
     width: 200px;
 }
 .dog-txt h2{
-    color: #fff;
+    color: #f79e02;
     margin: 0 auto;
     text-align: center;
-    background: #420808;
+    background: #0074e1;
     font-size: 20px;
     padding: 10px;
     font-weight: 400;
@@ -322,7 +322,6 @@ header{
     background: #e8e8e8;
     width: 100%;
     flex: 1 1 40px;
-    color: #420808;
     padding: 2% 2%;
     text-align: justify;
     flex-wrap: wrap;
@@ -331,19 +330,23 @@ header{
 .doginfo h3{
     padding-bottom: 5px;
     font-size: 30px;
+    color: #f79e02;
 }
 .doginfo p{
     padding-bottom: 5px;
-    font-size: 15px
+    font-size: 15px;
+    color: #0074e1;
 }
 .doginfo ul li{
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 15px;
+    color: #0074e1;
 }
 .doginfo h4{
     font-size: 20px;
     padding-bottom: 5px;
+    color: #f79e02;
 }
 @media(max-width:860px){
     .doggo{
@@ -389,7 +392,7 @@ header{
 /*Section videos*/
 .videos{
     padding-bottom: 100px;
-    background: #420808;
+    background: #1b9ce5;
     color: #fff;
 }
 .videos > .call h2{
@@ -419,7 +422,7 @@ header{
 
 /*Charity*/
 .charity{
-    background: #420808;
+    background: #1b9ce5;
     color: #fff;
 }
 .charity > .call h2{
@@ -468,7 +471,7 @@ header{
     margin: 0 auto;
     margin-top: -5px;
     background: #e8e8e8;
-    color: #420808;
+    color: #f79e02;
     border-radius: 0px 0px 10px 10px;
     padding: 5px;   
 }
@@ -507,7 +510,7 @@ form button{
     cursor: pointer;
     font-weight: 700;
     color: #fff;
-    background: #824a4a;
+    background: #f79e02;
 }
 form button:hover{
     text-decoration: underline;
@@ -530,10 +533,11 @@ form button:hover{
 footer{
     text-align: center;
     background: #e8e8e8;
-    color: #420808;
+    color: #0074e1;
 }
 .social p{
     font-size: 10px;
+    color: #0074e1;
 }
 .social ul{
     display: flex;
@@ -543,21 +547,11 @@ footer{
     padding: 0 3px;
 }
 .social ul li a{
-    color: #420808;
+    color: #f79e02;
     font-size: 20px;
 }
 .social ul li a:hover{
-    color: #824a4a;
-}
-small{
-    font-size: 8px;
-     color: #420808;
-}
-small a{
-     color: #420808;
-}
-small a:hover{
-    text-decoration: underline;
+    color: #1b9ce5;
 }
 
 /*Flags*/
@@ -577,7 +571,7 @@ small a:hover{
     width: 36px;
     height: 36px;
     text-align: center;
-    background: #e8e8e8;
+    background: #f79e02;
     border-radius: 50%;
     margin-bottom: 10px;
     position: fixed;
@@ -595,37 +589,11 @@ small a:hover{
 }
 .backtop i{
     font-size: 35px;
-    color: #824a4a;
+    color: #0074e1;
 }
 .backtop:hover{
-    background: #824a4a;
+    background: #6cdaee;
 }
 .backtop i:hover{
-    color: #e8e8e8;
+    color: #f79e02;
 }
-
-/* Br colors */
-.headerbr, .adoptionbr, .doginfobr button, .dog-txtbr, .dog-txtbr h2, .videosbr, .charitybr{
-    background:#1e761e;
-}
-.doginfobr, .socialbr, .socialbr i, .backtopbr i, .charity-cardsbr h3{
-    color: #1e761e;
-}
-.backtopbr:hover{
-    background: #7add7a;
-}
-.formbr button[type="submit"]{
-    background: #7add7a;
-}
-.doginfobr button:hover{
-    background: #7add7a;
-}
-
-@media(max-width:800px){    
-    .menu-nav.mobile-menubr li:hover{
-            background-color: #7add7a;
-    }
-    .menu-nav.mobile-menubr li{
-        border-bottom: 2px solid #1e761e ;
-    }
-    }
